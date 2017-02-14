@@ -28,7 +28,7 @@
 		</javaTypeResolver>
 
 		<!-- targetProject:生成PO类的位置 -->
-		<javaModelGenerator targetPackage="com.stockemotion.statistic.model.stock"
+		<javaModelGenerator targetPackage="com.stockemotion.redis.model"
 							targetProject=".\src">
 			<!-- enableSubPackages:是否让schema作为包的后缀 -->
 			<property name="enableSubPackages" value="false" />
@@ -36,14 +36,14 @@
 			<property name="trimStrings" value="true" />
 		</javaModelGenerator>
 		<!-- targetProject:mapper映射文件生成的位置 -->
-		<sqlMapGenerator targetPackage="com.stockemotion.statistic.mapper.stock"
+		<sqlMapGenerator targetPackage="com.stockemotion.redis.mapper"
 						 targetProject=".\src">
 			<!-- enableSubPackages:是否让schema作为包的后缀 -->
 			<property name="enableSubPackages" value="false" />
 		</sqlMapGenerator>
 		<!-- targetPackage：mapper接口生成的位置 -->
 		<javaClientGenerator type="XMLMAPPER"
-							 targetPackage="com.stockemotion.statistic.mapper.stock"
+							 targetPackage="com.stockemotion.redis.mapper"
 							 targetProject=".\src">
 			<!-- enableSubPackages:是否让schema作为包的后缀 -->
 			<property name="enableSubPackages" value="false" />
@@ -58,38 +58,8 @@
 		<table schema="" tableName="tb_item_param_item"></table>
 		-->
 
-		<table schema="" tableName="device_info"></table>
-		<!--<table schema="" tableName="device_info"></table>
 		<table schema="" tableName="users"></table>
-		<table schema="" tableName="device_record"></table>-->
 
-
-
-
-
-
-		<!--<table schema="" tableName="social_action_log"></table>
-		<table schema="" tableName="social_blacklist"></table>
-		<table schema="" tableName="social_buddy_fans"></table>
-		<table schema="" tableName="social_buddy_follow"></table>
-		<table schema="" tableName="social_buddy_follow_group"></table>
-		<table schema="" tableName="social_buddy_follow_group_relation"></table>
-		<table schema="" tableName="social_buddy_follow_table_id"></table>
-		<table schema="" tableName="social_comment"></table>
-		<table schema="" tableName="social_event"></table>
-		<table schema="" tableName="social_forum"></table>
-		<table schema="" tableName="social_forum_tag"></table>
-		<table schema="" tableName="social_report"></table>
-		<table schema="" tableName="social_topic"></table>
-		<table schema="" tableName="social_topic_favorite"></table>
-		<table schema="" tableName="social_topic_longtext"></table>
-		<table schema="" tableName="social_topic_recommend"></table>
-		<table schema="" tableName="social_topic_statistic"></table>
-		<table schema="" tableName="social_topic_summary"></table>
-		<table schema="" tableName="social_user"></table>
-		<table schema="" tableName="social_user_like"></table>
-		<table schema="" tableName="social_user_phone_contact"></table>
-		<table schema="" tableName="social_user_topic"></table>-->
 
 
 	</context>
